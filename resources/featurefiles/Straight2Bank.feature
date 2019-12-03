@@ -13,7 +13,26 @@ Scenario: Verify the tooltip on Hover on Messages
 	And Verify user able to filter messages
 	And Verify selected message is displayed properly
 	Then Verify message unread count is reduced from previous count 
+@FundTransfer		
+Scenario: Verify user can Search the pay From and Payee with a minimum search character of three and Add Invoice 
+   
+    Given user launch the url and enters on login page
+    When user enter valid login credentials
+    And user can able to navigate homepage
+	And user on home page and able to navigate fundtransfers option
+	And user can search with three letters of payee
+	And user should add invoice details
+	And  user should complete by pressing continue 
 	
+	
+@Reports 
+Scenario: Verify the REPORTS & ALERTS 
+	Given Verify user navigates to the S2B Home Screen REPORTS & ALERTS 
+	When Verify user navigates to S2B REPORTS Screen 
+	#And Verify user able to filter messages
+	#And Verify selected message is displayed properly
+	#Then Verify message unread count is reduced from previous count 
+		
 	
 	
     

@@ -38,6 +38,9 @@ public class Dashbord_step_def extends driverutils {
 	public void verify_user_navigates_to_S_B_home_Menu(int arg1) throws Throwable {
 		WebDriverWait wait = new WebDriverWait(driver, 50);
 		dashb.dash(driver);
+		dashbordpom dash = new dashbordpom(driver);
+		dash.getSettingsBtn().click();
+		Thread.sleep(4000);
 	}
 
 	@When("^Verify user navigates to dashbord$")
