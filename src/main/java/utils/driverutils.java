@@ -20,7 +20,7 @@ public class driverutils {
 
 	public static  WebDriver driver()
 	{
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\muralim\\workspace\\scb\\driver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\chromedriver.exe");
 	return driver=new ChromeDriver();
 	}
 	

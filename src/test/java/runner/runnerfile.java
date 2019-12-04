@@ -10,8 +10,9 @@ import cucumber.api.junit.Cucumber;
 		"Stepdefinition"},
 //tags={"@dashbord"},
 //tags={"@Messages"},
-tags={"@FundTransfer"},
-//tags={"@Reports"},
+//tags={"@FundTransfer"},
+tags={"@Reports_edit_and_run"},
+//tags={"@Reports_download"},
 plugin = {"html:target/cucumber-html-report"})
 public class runnerfile { 
 

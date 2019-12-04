@@ -21,7 +21,7 @@ public class dashbordpom extends driverutils {
 	public WebElement settingsBtn;
 	@FindBy(how = How.XPATH, using = "//div[@class='menu-content-new menu-content--active menu-content-item-heading']/child::div/a[2]/div/label")
 	public WebElement manageDashBtn;	
-	@FindBy(how = How.XPATH, using = "//span[@id='quick-navigation2']")
+	@FindBy(how = How.XPATH, using = "//div[@unique-widget-id='quick-payments2']/child::span")
 	public WebElement quickPayclBtn;
 	@FindBy(how = How.XPATH, using = "//span[@id='quick-navigation7']']")
 	public WebElement quickNavclBtn;

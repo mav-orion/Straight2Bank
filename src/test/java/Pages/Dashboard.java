@@ -20,8 +20,7 @@ public class Dashboard   {
 		menuclick= wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Menu')]")));
 		menuclick.click();
 		Thread.sleep(4000);
-		dash.getSettingsBtn().click();
-		Thread.sleep(4000);
+		
 		
 	}
   

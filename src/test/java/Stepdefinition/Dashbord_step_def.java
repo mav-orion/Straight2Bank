@@ -55,18 +55,20 @@ public class Dashbord_step_def extends driverutils {
 	public void verify_user_able_to_successfully_customize_the_dashbord() throws Throwable {
 
 		WebDriverWait wait = new WebDriverWait(driver, 60);
-		/*
-		 * WebElement tile; tile=
-		 * wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
-		 * "//span[@id='quick-payments2']")));
-		 */
+		
+		  WebElement tile; 
+		  tile=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath( "//div[@unique-widget-id='quick-payments2']/child::span")));
+		 
 		dashbordpom dash = new dashbordpom(driver);
 		Thread.sleep(4000);
-		/*
-		 * if(tile.getText().contains("Quick")) { dash.getQuickPayBtn().click();
-		 * Thread.sleep(3000); }else{
-		 * System.out.println("tileee"+tile.getText()); }
-		 */
+		
+		  if(tile.isDisplayed()) 
+		  { dash.getQuickPayBtn().click();
+		  Thread.sleep(10000); 
+		  
+		  }else{
+		  System.out.println("tileee"+tile.getText()); }
+		 
 		Actions builder = new Actions(driver);
 		Thread.sleep(3000);
 		builder.dragAndDrop(dash.getFromArea(), dash.getToArea()).build().perform();

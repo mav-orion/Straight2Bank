@@ -24,14 +24,19 @@ Scenario: Verify user can Search the pay From and Payee with a minimum search ch
 	And user should add invoice details
 	And  user should complete by pressing continue 
 	
+@Reports_edit_and_run
+Scenario: verify the column drag and drop, column edit and run the report for editable Operating Account Details report
+	Given Verify user navigates to the S2B Home Screen report and alerts 
+	When Verify user navigates to S2B reports Screen	
+	Then verify the column drag and drop, column edit and run the report for editable Operating Account Details report 
+		
+
 	
-@Reports 
-Scenario: Verify the REPORTS & ALERTS 
+@Reports_download 
+Scenario: Verify user able to download the Operating Account Statement Report
 	Given Verify user navigates to the S2B Home Screen REPORTS & ALERTS 
-	When Verify user navigates to S2B REPORTS Screen 
-	#And Verify user able to filter messages
-	#And Verify selected message is displayed properly
-	#Then Verify message unread count is reduced from previous count 
+	When Verify user navigates to S2B REPORTS Screen	
+	Then Verify user able to download the Operating Account Statement Report 
 		
 	
 	
